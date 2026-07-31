@@ -1,0 +1,7 @@
+# Prevent any uploaded file in this folder from ever being executed as a script,
+# even if someone manages to upload a disguised .php file as a "CV".
+<FilesMatch "\.(php|php3|php4|php5|phtml|pl|py|cgi|asp|sh)$">
+    Require all denied
+</FilesMatch>
+Options -ExecCGI
+AddHandler cgi-script .php .php3 .php4 .php5 .phtml .pl .py .cgi .asp .sh

@@ -1,0 +1,1 @@
+<?php echo "PHP kaam kar raha hai!"; ?>
